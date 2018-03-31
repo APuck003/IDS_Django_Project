@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IDS Equip</title>
+
+{#    <link href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">#}
+
+{#    <link rel="stylesheet" href="{% static "home/css/bootstrap.css" %}">#}
+    <link rel="stylesheet" href="{% static "home/css/bootstrap.min.css" %}">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "home/css/style.css" %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">Industrial Disposal Supply</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="#">Street Sweepers</a>
+                            <a class="dropdown-item" href="#">Compactors and Balers</a>
+                            <a class="dropdown-item" href="#">Recycling Products</a>
+                            <a class="dropdown-item" href="#">Parts</a>
+                            <a class="dropdown-item" href="#">Tymco</a>
+                        </div>
+                    </li>
+{#                    <li class="nav-item dropdown">#}
+{#                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                Blog#}
+{#              </a>#}
+{#                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">#}
+{#                            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>#}
+{#                            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>#}
+{#                            <a class="dropdown-item" href="blog-post.html">Blog Post</a>#}
+{#                        </div>#}
+{#                    </li>#}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                            <a class="dropdown-item" href="404.html">404</a>
+                            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('https://www.tymco.com/wp-content/uploads/Model-600-CNG-FL-BLogic-glamstock-5-12-16-113.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Quality Equipment</h3>
+                        <p>We sell only the best waste management equipment on the market.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <!-- style="background-image: url('https://www.trashtrucksonline.com/user_images/8643360.jpg')" -->
+                <div class="carousel-item" style="background-image: url('https://www.trashtrucksonline.com/user_images/8643360.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Unmatched Customer Service</h3>
+                        <p>We strive to supply our customers the highest quality service.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://nedland.com/wp-content/uploads/2017/08/self-contained-compactors.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Service and Repair</h3>
+                        <p>Our customers are provided continued service even after installment.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="my-4">Welcome to IDS</h1>
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">History</h4>
+                    <div class="card-body">
+                        <p class="card-text">Founded in 1963, Industrial Disposal was created with the philosophy of total service to the emerging solid waste industry. Today the firm continues to embrace this same philosophy of service, but the scope has expanded to include all facets of the waste industry: Solid, Liquid, Hazardous, Street Sweeping, Sludge and Recycling.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Financial Support</h4>
+                    <div class="card-body">
+                        <p class="card-text">IDS offers varied plans for purchase to fit the needs of qualified accounts:<br>• Outright purchase with limited terms<br>• Lease/purchase with option to buy with flexible time periods of 36-48-60 months<br>• Municipal leasing plans for political subdivisions<br>• Straight rental of some types of products with no purchase option</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Performance and Products</h4>
+                    <div class="card-body">
+                        <p class="card-text">IDS remains the leader in providing state-of-the-art waste systems. We provide you with prompt, personalized, professional service every step of the way:<br>• Design assistance<br>• Full range of quality systems<br>• Job site delivery via IDS tractors/trailers<br>• Turnkey installations<br>• Repair, removal and relocation of ours and other’s products<br>• After sales support</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <h2>Featured Products</h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="https://cdn.forconstructionpros.com/files/base/acbm/fcp/image/2012/06/640w/tymco-logo-tif-revised_10728621.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Tymco</a>
+                        </h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://www.monogramco.com/wp-content/uploads/2015/03/Duratech-Feature-Image.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">DuraTech</a>
+                        </h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="https://www.saratogacamping.com/Dura-Bilt%20Logo0002.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Dura-Bilt</a>
+                        </h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Locations</h2>
+                <p>IDS Office Locations:</p>
+                <ul>
+{#                    <li>#}
+{#                        <strong>Bootstrap v4</strong>#}
+{#                    </li>#}
+{#                    <li>jQuery</li>#}
+                    <li>San Antonio, TX</li>
+                    <li>Plano, TX</li>
+                    <li>Houston, TX</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="http://www.idsequip.com/img/map.gif" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-secondary btn-block" href="#">IDS Call to Action Page</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static "home/js/jquery.min.js" %}"></script>
+    <script src="{% static "home/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "home/js/bootstrap.bundle.min.js" %}"></script>
+
+
+</body>
+
+</html>
