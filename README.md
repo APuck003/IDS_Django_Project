@@ -1,5 +1,1 @@
-# IDS_Django_Project
-# IDS-Django
-# IDS-Django
-# IDS-site
-# IDS_Django_Project
+Website I made for a waste management company
