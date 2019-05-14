@@ -35,7 +35,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Service</a>
+                        <a class="nav-link" href="{% url 'service' %}">Service</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
@@ -96,14 +96,14 @@
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
                 <!-- style="background-image: url('https://www.trashtrucksonline.com/user_images/8643360.jpg')" -->
-                <div class="carousel-item" style="background-image: url('https://www.trashtrucksonline.com/user_images/8643360.jpg')">
+                <div class="carousel-item non-full-width-image" style="background-image: url('https://www.trashtrucksonline.com/user_images/8643360.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Unmatched Customer Service</h3>
                         <p>We strive to supply our customers the highest quality service.</p>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('https://nedland.com/wp-content/uploads/2017/08/self-contained-compactors.jpg')">
+                <div class="carousel-item non-full-width-image" style="background-image: url('https://nedland.com/wp-content/uploads/2017/08/self-contained-compactors.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Service and Repair</h3>
                         <p>Our customers are provided continued service even after installment.</p>
@@ -222,7 +222,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="http://www.idsequip.com/img/map.gif" alt="">
+                <img class="img-fluid rounded" src="{% static 'home/images/map.gif' %}" alt="">
             </div>
         </div>
         <!-- /.row -->
